@@ -25,3 +25,9 @@ def electronica(request):
 def administracion(request):
     return render(request, 'UProbotics_app/administracion.html')
 
+def patrocinadores(request):
+    return render(request, 'UProbotics_app/patrocinadores.html')
+
+def historia(request):
+    return render(request, 'UProbotics_app/historia.html')
+
