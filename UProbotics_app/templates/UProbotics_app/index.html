@@ -50,8 +50,9 @@
         <div class="row">
             <div class="col-lg-3 bg-secondary d-none d-lg-block">
                 <a href="{% url 'home' %}" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
-                    <h1 class="m-0 display-4 text-primary">UProbotics</h1>
+                    <img src="{% static 'UProbotics_app/img/logo_azul.png' %}" alt="UProbotics Logo" class="img-fluid">
                 </a>
+                
             </div>
             <div class="col-lg-9">
                 <div class="row bg-white border-bottom d-none d-lg-flex">
@@ -123,9 +124,9 @@
                 <img class="position-absolute w-100 h-100" src="{% static 'UProbotics_app/img/team.jpeg' %}" style="object-fit: cover;">
                 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                     <div class="p-3" style="max-width: 900px;">
-                        <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Best Law Agency</h4>
-                        <h3 class="display-2 text-capitalize text-white mb-4">Our fighting Is for your justice</h3>
-                        <a class="btn btn-primary py-3 px-5 mt-2" href="#">Get An Appointment</a>
+                        <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;"></h4>
+                        <h3 class="display-2 text-capitalize text-white mb-4"></h3>
+                        
                     </div>
                 </div>
             </div>
@@ -133,9 +134,9 @@
                 <img class="position-absolute w-100 h-100" src="{% static 'UProbotics_app/img/robot.jpeg' %}" style="object-fit: cover;">
                 <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                     <div class="p-3" style="max-width: 900px;">
-                        <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Results You Deserve</h4>
-                        <h3 class="display-2 text-capitalize text-white mb-4">We prepared to oppose for you</h3>
-                        <a class="btn btn-primary py-3 px-5 mt-2" href="#">Llamanos</a>
+                        <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Robots de búsqueda y rescate </h4>
+                        <h3 class="display-2 text-capitalize text-white mb-4">Engineered for Resilience, Built for Rescue</h3>
+                        
                     </div>
                 </div>
             </div>
@@ -164,133 +165,111 @@
             </div>
             <div class="col-lg-7 mt-4 mt-lg-0">
                 <h2 class="position-relative text-center bg-white text-primary rounded p-3 mt-4 mb-4 d-none d-lg-block" style="width: 350px; margin-left: -205px;">25 Years Experience</h2>
-                <h6 class="text-uppercase">Learn About Us</h6>
-                <h1 class="mb-4">We Provide Reliable And Effective Legal Services</h1>
+                <h6 class="text-uppercase">Conoce sobre nosotros </h6>
+                <h1 class="mb-4">UP Robotics es un equipo de estudiantes de ingeniería enfocados en elaborar
+                    robots de búsqueda y rescate para asistir al mayor número de personas dentro
+                    de situaciones de desastres naturales, principalmente en terremotos y sismos.</h1>
                 <p>Invidunt lorem justo sanctus clita. Erat lorem labore ea, justo dolor lorem ipsum ut sed eos, ipsum et dolor kasd sit ea justo. Erat justo sed sed diam. Ea et erat ut sed diam sea ipsum est dolor</p>
-                <a href="" class="btn btn-primary mt-2">Learn More</a>
             </div>
         </div>
     </div>
 </div>
 <!-- About End -->
 
+<!-- New Section Start -->
+<div class="container-fluid py-5">
+    <div class="container py-5">
+        <div class="row">
+            <!-- Columna de texto alineado a la izquierda con fondo blanco -->
+            <div class="col-lg-5 text-left">
+                <div class="bg-white rounded p-4">
+                    <h1 class="mb-4">En 2017 pudimos colaborar con el equipo de rescate en el terremoto del 19 de septiembre en la Ciudad de México</h1>
+                    <p>Fue un honor poder contribuir en la recuperación de personas tras este desastre natural. Nuestra tecnología de robots de búsqueda y rescate ayudó a localizar personas atrapadas en estructuras colapsadas y a brindarles asistencia.</p>
+                </div>
+            </div>
+            <!-- Columna de la imagen pegada a la derecha -->
+            <div class="col-lg-7 text-center">
+                <img class="img-fluid rounded mb-4" src="{% static 'UProbotics_app/img/terremoto_2017.png' %}" alt="Colaboración 2017">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- New Section End -->
 
 
-
-    <!-- Appointment Start -->
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="bg-appointment rounded">
-                <div class="row h-100 align-items-center justify-content-center">
-                    <div class="col-lg-6 py-5">
-                        <div class="rounded p-5 my-5" style="background: rgba(55, 55, 63, .7);">
-                            <h1 class="text-center text-white mb-4">Get An Appointment</h1>
-                            <form>
-                                <div class="form-group">
-                                    <input type="text" class="form-control border-0 p-4" placeholder="Your Name" required="required" />
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" class="form-control border-0 p-4" placeholder="Your Email" required="required" />
-                                </div>
-                                <div class="form-row">
-                                    <div class="col-6">
-                                        <div class="form-group">
-                                            <div class="date" id="date" data-target-input="nearest">
-                                                <input type="text" class="form-control border-0 p-4 datetimepicker-input" placeholder="Select Date" data-target="#date" data-toggle="datetimepicker"/>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="form-group">
-                                            <div class="time" id="time" data-target-input="nearest">
-                                                <input type="text" class="form-control border-0 p-4 datetimepicker-input" placeholder="Select Time" data-target="#time" data-toggle="datetimepicker"/>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <select class="custom-select border-0 px-4" style="height: 47px;">
-                                        <option selected>Select A Service</option>
-                                        <option value="1">Service 1</option>
-                                        <option value="2">Service 1</option>
-                                        <option value="3">Service 1</option>
-                                    </select>
-                                </div>
-                                <div>
-                                    <button class="btn btn-primary btn-block border-0 py-3" type="submit">Get An Appointment</button>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
+<!-- Features Start -->
+<div class="container-fluid py-5">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-6" style="min-height: 500px;">
+                <div class="position-relative h-100 rounded overflow-hidden">
+                    <img class="position-absolute w-100 h-100" src="{% static 'UProbotics_app/img/robot_2.jpg' %}" style="object-fit: cover;">
+                </div>
+            </div>
+            <div class="col-lg-6 pt-5 pb-lg-5">
+                <div class="feature-text bg-white rounded p-lg-5">
+                    <h6 class="text-uppercase">Nuestro Objetivo</h6>
+                    <h1 class="mb-4">Ganar la RoboCup Rescue League</h1>
+                    <p>La RoboCup Rescue League es una competencia anual internacional para diseñar, desarrollar, evaluar y demostrar capacidades robóticas avanzadas para apoyar al Personal de Respuesta a Emergencias.</p>
                 </div>
             </div>
         </div>
     </div>
-    <!-- Appointment End -->
+</div>
+<!-- Features End -->
 
-
-    <!-- Features Start -->
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-lg-6" style="min-height: 500px;">
-                    <div class="position-relative h-100 rounded overflow-hidden">
-                        <img class="position-absolute w-100 h-100" src="{% static 'UProbotics_app/img/robot_2.jpg' %}" style="object-fit: cover;">
-                    </div>
+<!-- Logros Start -->
+<div class="container-fluid py-5">
+    <div class="container py-5">
+        <div class="row">
+            <!-- Columna de texto alineado a la izquierda con fondo blanco -->
+            <div class="col-lg-6 text-left">
+                <div class="bg-white p-4 rounded">
+                    <h1 class="mb-4">Logros de UP Robotics</h1>
+                    <p>Estos son algunos de nuestros logros más destacados en competencias internacionales y premios:</p>
+                    <ul>
+                        <li><strong>2023:</strong> “Gigante de la Innovación” - Premio Estatal de la Juventud</li>
+                        <li><strong>2016 (Alemania):</strong> 1er lugar “Best-in-Class Dexterity”</li>
+                        <li><strong>2016 (Alemania):</strong> 1er lugar “Best-in-Class Manipulation”</li>
+                        <li><strong>2015 (China):</strong> 1er lugar “Best-in-Class Manipulation”</li>
+                        <li><strong>2013 (Países Bajos):</strong> 1er lugar “Best-in-Class Manipulation”</li>
+                    </ul>
                 </div>
-                <div class="col-lg-6 pt-5 pb-lg-5">
-                    <div class="feature-text bg-white rounded p-lg-5">
-                        <h6 class="text-uppercase">Our Features</h6>
-                        <h1 class="mb-4">Why Choose Us</h1>
-                        <div class="d-flex mb-4">
-                            <div class="btn-primary btn-lg-square px-3" style="border-radius: 50px;">
-                                <h5 class="text-secondary m-0">01</h5>
-                            </div>
-                            <div class="ml-4">
-                                <h5>Best Law Practices</h5>
-                                <p class="m-0">Ipsum duo tempor elitr rebum stet magna amet kasd. Ipsum magna ipsum ipsum stet ipsum</p>
-                            </div>
-                        </div>
-                        <div class="d-flex mb-4">
-                            <div class="btn-primary btn-lg-square px-3" style="border-radius: 50px;">
-                                <h5 class="text-secondary m-0">02</h5>
-                            </div>
-                            <div class="ml-4">
-                                <h5>Efficiency & Trust</h5>
-                                <p class="m-0">Ipsum duo tempor elitr rebum stet magna amet kasd. Ipsum magna ipsum ipsum stet ipsum</p>
-                            </div>
-                        </div>
-                        <div class="d-flex">
-                            <div class="btn-primary btn-lg-square px-3" style="border-radius: 50px;">
-                                <h5 class="text-secondary m-0">03</h5>
-                            </div>
-                            <div class="ml-4">
-                                <h5>Results You Deserve</h5>
-                                <p class="m-0">Ipsum duo tempor elitr rebum stet magna amet kasd. Ipsum magna ipsum ipsum stet ipsum</p>
-                            </div>
-                        </div>
-                    </div>
+            </div>
+
+            <!-- Columna de la imagen pegada a la derecha -->
+            <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                <img class="img-fluid rounded" src="{% static 'UProbotics_app/img/trabajando2.jpg' %}" alt="Logros UP Robotics" style="max-width: 100%; max-height: 100%; height: auto; width: auto;">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Logros End -->
+
+
+
+
+<!-- Action Start -->
+<div class="container-fluid py-5">
+    <div class="container py-5">
+        <div class="bg-action rounded" style="height: 500px; overflow: hidden;">
+            <div class="row h-100 align-items-center justify-content-center">
+                <div class="col-lg-6 text-center">
+                    <h1 class="text-white mb-4">Mira nuestro robot en acción</h1>
+                    <p class="text-white mb-4">Descubre cómo nuestro robot de búsqueda y rescate se desplaza y realiza tareas de manera autónoma en situaciones de desastre.</p>
+                    <a class="btn btn-primary py-3 px-5 mt-2" href="https://www.youtube.com/watch?v=bN1vUehXOaI" target="_blank">Ver Video</a>
+                </div>
+                <div class="col-lg-6 d-flex justify-content-center align-items-center">
+                    <img class="img-fluid rounded" src="{% static 'UProbotics_app/img/robot3.png' %}" alt="Robot en acción" style="max-width: 100%; max-height: 100%; height: auto; width: auto;">
                 </div>
             </div>
         </div>
     </div>
-    <!-- Features End -->
+</div>
+<!-- Action End -->
 
 
-    <!-- Action Start -->
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="bg-action rounded" style="height: 500px;">
-                <div class="row h-100 align-items-center justify-content-center">
-                    <div class="col-lg-7 text-center">
-                        <h1 class="text-white mb-4">Let's get started. Call us now for a Free Consultation</h1>
-                        <a class="btn btn-primary py-3 px-5 mt-2" href="#">Call Us Now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Action End -->
+
 
 
 

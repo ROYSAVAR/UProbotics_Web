@@ -42,6 +42,7 @@
     <!-- Customized Bootstrap Stylesheet -->
     <link href="{% static 'UProbotics_app/css/style.css' %}" rel="stylesheet">
     <link href="{% static 'UProbotics_app/css/color_palette.css' %}" rel="stylesheet">
+    
 </head>
 
 <body>
@@ -50,7 +51,7 @@
         <div class="row">
             <div class="col-lg-3 bg-secondary d-none d-lg-block">
                 <a href="{% url 'home' %}" class="navbar-brand w-100 h-100 m-0 p-0 d-flex align-items-center justify-content-center">
-                    <h1 class="m-0 display-4 text-primary">UProbotics</h1>
+                    <img src="{% static 'UProbotics_app/img/logo_azul.png' %}" alt="UProbotics Logo" class="img-fluid">
                 </a>
             </div>
             <div class="col-lg-9">
@@ -114,140 +115,447 @@
     <!-- Header End -->
 
 
-    <!-- Page Header Start -->
-    <div class="container-fluid bg-page-header" style="margin-bottom: 90px;">
-        <div class="container">
-            <div class="d-flex flex-column align-items-center justify-content-center" style="min-height: 400px">
-                <h3 class="display-3 text-white">Patrocinadores Uprobotics</h3>
-                <div class="d-inline-flex text-white">
-                    <p class="m-0 text-uppercase"><a class="text-white" href="">Home</a></p>
-                    <i class="fa fa-angle-double-right pt-1 px-3"></i>
-                    <p class="m-0 text-uppercase">Patrocinadores Uprobotics</p>
+   <!-- Carousel Start -->
+<div class="container-fluid p-0 mb-5 pb-5">
+    <div id="header-carousel" class="carousel slide carousel-fade" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item position-relative active" style="height: 100vh; min-height: 400px;">
+                <img class="position-absolute w-100 h-100" src="{% static 'UProbotics_app/img/patrocinadores.png' %}" style="object-fit: cover;">
+                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                    <div class="p-3" style="max-width: 900px;">
+                        <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Apoyando el talento que transforma.</h4>
+                        <h3 class="display-2 text-capitalize text-white mb-4"></h3>
+            
+                    </div>
                 </div>
             </div>
-        </div>
-    </div>
-    <!-- Page Header End -->
-
-
-    <!-- About Start -->
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-lg-5">
-                    <img class="img-fluid rounded" src="img/about.jpg" alt="">
-                </div>
-                <div class="col-lg-7 mt-4 mt-lg-0">
-                    <h2 class="position-relative text-center bg-white text-primary rounded p-3 mt-4 mb-4 d-none d-lg-block" style="width: 350px; margin-left: -205px;">25 Years Experience</h2>
-                    <h6 class="text-uppercase">Learn About Us</h6>
-                    <h1 class="mb-4">We Provide Reliable And Effective Legal Services</h1>
-                    <p>Invidunt lorem justo sanctus clita. Erat lorem labore ea, justo dolor lorem ipsum ut sed eos, ipsum et dolor kasd sit ea justo. Erat justo sed sed diam. Ea et erat ut sed diam sea ipsum est dolor</p>
-                    <a href="" class="btn btn-primary mt-2">Learn More</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- About End -->
-
-
-    <!-- Appointment Start -->
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="bg-appointment rounded">
-                <div class="row h-100 align-items-center justify-content-center">
-                    <div class="col-lg-6 py-5">
-                        <div class="rounded p-5 my-5" style="background: rgba(55, 55, 63, .7);">
-                            <h1 class="text-center text-white mb-4">Get An Appointment</h1>
-                            <form>
-                                <div class="form-group">
-                                    <input type="text" class="form-control border-0 p-4" placeholder="Your Name" required="required" />
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" class="form-control border-0 p-4" placeholder="Your Email" required="required" />
-                                </div>
-                                <div class="form-row">
-                                    <div class="col-6">
-                                        <div class="form-group">
-                                            <div class="date" id="date" data-target-input="nearest">
-                                                <input type="text" class="form-control border-0 p-4 datetimepicker-input" placeholder="Select Date" data-target="#date" data-toggle="datetimepicker"/>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-6">
-                                        <div class="form-group">
-                                            <div class="time" id="time" data-target-input="nearest">
-                                                <input type="text" class="form-control border-0 p-4 datetimepicker-input" placeholder="Select Time" data-target="#time" data-toggle="datetimepicker"/>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                    <select class="custom-select border-0 px-4" style="height: 47px;">
-                                        <option selected>Select A Service</option>
-                                        <option value="1">Service 1</option>
-                                        <option value="2">Service 1</option>
-                                        <option value="3">Service 1</option>
-                                    </select>
-                                </div>
-                                <div>
-                                    <button class="btn btn-primary btn-block border-0 py-3" type="submit">Get An Appointment</button>
-                                </div>
-                            </form>
-                        </div>
+            <div class="carousel-item position-relative" style="height: 100vh; min-height: 400px;">
+                <img class="position-absolute w-100 h-100" src="{% static 'UProbotics_app/img/trabajando2.jpg' %}" style="object-fit: cover;">
+                <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                    <div class="p-3" style="max-width: 900px;">
+                        <h4 class="text-white text-uppercase mb-4" style="letter-spacing: 3px;">Gracias por confiar en nosotros.</h4>
+                        <h3 class="display-2 text-capitalize text-white mb-4"></h3>
+        
                     </div>
                 </div>
             </div>
         </div>
+        <a class="carousel-control-prev" href="#header-carousel" data-slide="prev">
+            <div class="btn btn-lg btn-secondary btn-lg-square">
+                <span class="carousel-control-prev-icon"></span>
+            </div>
+        </a>
+        <a class="carousel-control-next" href="#header-carousel" data-slide="next">
+            <div class="btn btn-lg btn-secondary btn-lg-square">
+                <span class="carousel-control-next-icon"></span>
+            </div>
+        </a>
     </div>
-    <!-- Appointment End -->
+</div>
+<!-- Carousel End -->
 
 
-    <!-- Features Start -->
-    <div class="container-fluid py-5">
-        <div class="container py-5">
-            <div class="row">
-                <div class="col-lg-6" style="min-height: 500px;">
-                    <div class="position-relative h-100 rounded overflow-hidden">
-                        <img class="position-absolute w-100 h-100" src="img/feature.jpg" style="object-fit: cover;">
-                    </div>
-                </div>
-                <div class="col-lg-6 pt-5 pb-lg-5">
-                    <div class="feature-text bg-white rounded p-lg-5">
-                        <h6 class="text-uppercase">Our Features</h6>
-                        <h1 class="mb-4">Why Choose Us</h1>
-                        <div class="d-flex mb-4">
-                            <div class="btn-primary btn-lg-square px-3" style="border-radius: 50px;">
-                                <h5 class="text-secondary m-0">01</h5>
-                            </div>
-                            <div class="ml-4">
-                                <h5>Best Law Practices</h5>
-                                <p class="m-0">Ipsum duo tempor elitr rebum stet magna amet kasd. Ipsum magna ipsum ipsum stet ipsum</p>
-                            </div>
-                        </div>
-                        <div class="d-flex mb-4">
-                            <div class="btn-primary btn-lg-square px-3" style="border-radius: 50px;">
-                                <h5 class="text-secondary m-0">02</h5>
-                            </div>
-                            <div class="ml-4">
-                                <h5>Efficiency & Trust</h5>
-                                <p class="m-0">Ipsum duo tempor elitr rebum stet magna amet kasd. Ipsum magna ipsum ipsum stet ipsum</p>
-                            </div>
-                        </div>
-                        <div class="d-flex">
-                            <div class="btn-primary btn-lg-square px-3" style="border-radius: 50px;">
-                                <h5 class="text-secondary m-0">03</h5>
-                            </div>
-                            <div class="ml-4">
-                                <h5>Results You Deserve</h5>
-                                <p class="m-0">Ipsum duo tempor elitr rebum stet magna amet kasd. Ipsum magna ipsum ipsum stet ipsum</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<!-- About Start -->
+<div class="container-fluid py-5">
+    <div class="container py-5">
+        <div class="row">
+            <div class="col-lg-5">
+                <img class="img-fluid rounded" src="{% static 'UProbotics_app/img/damian.jpg' %}" alt="">
+            </div>
+            <div class="col-lg-7 mt-4 mt-lg-0">
+                <h2 class="position-relative text-center bg-white text-primary rounded p-3 mt-4 mb-4 d-none d-lg-block" style="width: 350px; margin-left: -205px;">Unidos por la pasión y el progreso.</h2> 
+                <h1 class="mb-4">Gracias a nuestros patrocinadores por ser parte fundamental de nuestro éxito. Su apoyo nos motiva a innovar y alcanzar nuevas metas.</h1>
+                <p>"Impulsando el talento y la innovación juntos."</p>
+            
             </div>
         </div>
     </div>
-    <!-- Features End -->
+</div>
+<!-- About End -->
+
+
+<!-- Patrocinadores Start -->
+<div class="container py-5">
+    <div class="row">
+        <!-- Contenedor de Autonics -->
+        <div class="col-lg-6 mb-4">
+            <div class="bg-white rounded shadow p-4 h-100">
+                <div class="image-container mb-4">
+                    <img class="w-100 h-100" src="{% static 'UProbotics_app/img/fotos_patrocinadores/autonics.png' %}" 
+                         alt="Patrocinador Autonics" 
+                         style="object-fit: contain;">
+                </div>
+                <h6 class="text-uppercase text-primary text-center">Patrocinador Destacado</h6>
+                <h2 class="mb-4 text-center">AUTONICS</h2>
+                <p class="mb-2"><strong>Innovación Constante:</strong> Autonics impulsa nuestros proyectos con su tecnología de vanguardia.</p>
+                <p class="mb-2"><strong>Compromiso con el Futuro:</strong> Apoyan la formación de talento en robótica y tecnología.</p>
+                <p><strong>Un Socio Confiable:</strong> Un aliado clave en nuestra misión de innovación.</p>
+            </div>
+        </div>
+
+        <!-- Contenedor de RANDOLPH MANUFACTURING -->
+        <div class="col-lg-6 mb-4">
+            <div class="bg-white rounded shadow p-4 h-100">
+                <div class="image-container mb-4">
+                    <img class="w-100 h-100" src="{% static 'UProbotics_app/img/fotos_patrocinadores/randolph.png' %}" 
+                         alt="Patrocinador Randolph" 
+                         style="object-fit: contain;">
+                </div>
+                <h6 class="text-uppercase text-primary text-center">Patrocinador Destacado</h6>
+                <h2 class="mb-4 text-center">RANDOLPH MANUFACTURING</h2>
+                <p class="mb-2"><strong>Innovación Constante:</strong> Otro patrocinador con visión y apoyo tecnológico.</p>
+                <p class="mb-2"><strong>Compromiso con el Futuro:</strong> Apoya nuestros proyectos de robótica.</p>
+                <p><strong>Un Socio Confiable:</strong> Siempre presente en nuestra misión.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Patrocinadores End -->
+
+
+<!-- Patrocinadores Start  -->
+<div class="container py-5">
+    <div class="row">
+        <!-- Contenedor de BENCHMARK GENSUITE -->
+        <div class="col-lg-6 mb-4">
+            <div class="bg-white rounded shadow p-4 h-100">
+                <div class="image-container mb-4">
+                    <img class="w-100 h-100" src="{% static 'UProbotics_app/img/fotos_patrocinadores/benchmark_gesnsuite.png' %}" 
+                         alt="Patrocinador Autonics" 
+                         style="object-fit: contain;">
+                </div>
+                <h6 class="text-uppercase text-primary text-center">Patrocinador Destacado</h6>
+                <h2 class="mb-4 text-center">BENCHMARK GENSUITE</h2>
+                <p class="mb-2"><strong>Innovación Constante:</strong> BENCHMARK GENSUITE impulsa nuestros proyectos con su tecnología de vanguardia.</p>
+                <p class="mb-2"><strong>Compromiso con el Futuro:</strong> Apoyan la formación de talento en robótica y tecnología.</p>
+                <p><strong>Un Socio Confiable:</strong> Un aliado clave en nuestra misión de innovación.</p>
+            </div>
+        </div>
+
+        <!-- Contenedor de 	UP -->
+        <div class="col-lg-6 mb-4">
+            <div class="bg-white rounded shadow p-4 h-100">
+                <div class="image-container mb-4">
+                    <img class="w-100 h-100" src="{% static 'UProbotics_app/img/fotos_patrocinadores/up.png' %}" 
+                         alt="Patrocinador Autonics" 
+                         style="object-fit: contain;">
+                </div>
+                <h6 class="text-uppercase text-primary text-center">Patrocinador Destacado</h6>
+                <h2 class="mb-4 text-center">	UP</h2>
+                <p class="mb-2"><strong>Innovación Constante:</strong> Otro patrocinador con visión y apoyo tecnológico.</p>
+                <p class="mb-2"><strong>Compromiso con el Futuro:</strong> Apoya nuestros proyectos de robótica.</p>
+                <p><strong>Un Socio Confiable:</strong> Siempre presente en nuestra misión.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Patrocinadores End -->
+
+<!-- Patrocinadores Start  -->
+<div class="container py-5">
+    <div class="row">
+        <!-- Contenedor de LUGUER -->
+        <div class="col-lg-6 mb-4">
+            <div class="bg-white rounded shadow p-4 h-100">
+                <div class="image-container mb-4">
+                    <img class="w-100 h-100" src="{% static 'UProbotics_app/img/fotos_patrocinadores/luguer.png' %}" 
+                         alt="Patrocinador Autonics" 
+                         style="object-fit: contain;">
+                </div>
+                <h6 class="text-uppercase text-primary text-center">Patrocinador Destacado</h6>
+                <h2 class="mb-4 text-center">LUGUER</h2>
+                <p class="mb-2"><strong>Innovación Constante:</strong> LUGUER impulsa nuestros proyectos con su tecnología de vanguardia.</p>
+                <p class="mb-2"><strong>Compromiso con el Futuro:</strong> Apoyan la formación de talento en robótica y tecnología.</p>
+                <p><strong>Un Socio Confiable:</strong> Un aliado clave en nuestra misión de innovación.</p>
+            </div>
+        </div>
+
+        <!-- Contenedor de SOCSA -->
+        <div class="col-lg-6 mb-4">
+            <div class="bg-white rounded shadow p-4 h-100">
+                <div class="image-container mb-4">
+                    <img class="w-100 h-100" src="{% static 'UProbotics_app/img/fotos_patrocinadores/socsa.png' %}" 
+                         alt="Patrocinador Autonics" 
+                         style="object-fit: contain;">
+                </div>
+                <h6 class="text-uppercase text-primary text-center">Patrocinador Destacado</h6>
+                <h2 class="mb-4 text-center">SOCSA</h2>
+                <p class="mb-2"><strong>Innovación Constante:</strong> SOCSA patrocinador con visión y apoyo tecnológico.</p>
+                <p class="mb-2"><strong>Compromiso con el Futuro:</strong> Apoya nuestros proyectos de robótica.</p>
+                <p><strong>Un Socio Confiable:</strong> Siempre presente en nuestra misión.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Patrocinadores End -->
+
+<!-- Patrocinadores Start  -->
+<div class="container py-5">
+    <div class="row">
+        <!-- Contenedor de SSMETAL -->
+        <div class="col-lg-6 mb-4">
+            <div class="bg-white rounded shadow p-4 h-100">
+                <div class="image-container mb-4">
+                    <img class="w-100 h-100" src="{% static 'UProbotics_app/img/fotos_patrocinadores/SSM.png' %}" 
+                         alt="Patrocinador Autonics" 
+                         style="object-fit: contain;">
+                </div>
+                <h6 class="text-uppercase text-primary text-center">Patrocinador Destacado</h6>
+                <h2 class="mb-4 text-center">SSMETAL</h2>
+                <p class="mb-2"><strong>Innovación Constante:</strong> SSMETAL impulsa nuestros proyectos con su tecnología de vanguardia.</p>
+                <p class="mb-2"><strong>Compromiso con el Futuro:</strong> Apoyan la formación de talento en robótica y tecnología.</p>
+                <p><strong>Un Socio Confiable:</strong> Un aliado clave en nuestra misión de innovación.</p>
+            </div>
+        </div>
+
+        <!-- Contenedor de  STEREN-->
+        <div class="col-lg-6 mb-4">
+            <div class="bg-white rounded shadow p-4 h-100">
+                <div class="image-container mb-4">
+                    <img class="w-100 h-100" src="{% static 'UProbotics_app/img/fotos_patrocinadores/steren.png' %}" 
+                         alt="Patrocinador Autonics" 
+                         style="object-fit: contain;">
+                </div>
+                <h6 class="text-uppercase text-primary text-center">Patrocinador Destacado</h6>
+                <h2 class="mb-4 text-center">STEREN</h2>
+                <p class="mb-2"><strong>Innovación Constante:</strong> STEREN con visión y apoyo tecnológico.</p>
+                <p class="mb-2"><strong>Compromiso con el Futuro:</strong> Apoya nuestros proyectos de robótica.</p>
+                <p><strong>Un Socio Confiable:</strong> Siempre presente en nuestra misión.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Patrocinadores End -->
+
+<!-- Patrocinadores Start  -->
+<div class="container py-5">
+    <div class="row">
+        <!-- Contenedor de INCYTEA -->
+        <div class="col-lg-6 mb-4">
+            <div class="bg-white rounded shadow p-4 h-100">
+                <div class="image-container mb-4">
+                    <img class="w-100 h-100" src="{% static 'UProbotics_app/img/fotos_patrocinadores/incytea.png' %}" 
+                         alt="Patrocinador INCYTEA" 
+                         style="object-fit: contain;">
+                </div>
+                <h6 class="text-uppercase text-primary text-center">Patrocinador Destacado</h6>
+                <h2 class="mb-4 text-center">INCYTEA</h2>
+                <p class="mb-2"><strong>Innovación Constante:</strong> INCYTEA impulsa nuestros proyectos con su tecnología de vanguardia.</p>
+                <p class="mb-2"><strong>Compromiso con el Futuro:</strong> Apoyan la formación de talento en robótica y tecnología.</p>
+                <p><strong>Un Socio Confiable:</strong> Un aliado clave en nuestra misión de innovación.</p>
+            </div>
+        </div>
+
+        <!-- Contenedor de IMED -->
+        <div class="col-lg-6 mb-4">
+            <div class="bg-white rounded shadow p-4 h-100">
+                <div class="image-container mb-4">
+                    <img class="w-100 h-100" src="{% static 'UProbotics_app/img/fotos_patrocinadores/imed.png' %}" 
+                         alt="Patrocinador IMED" 
+                         style="object-fit: contain;">
+                </div>
+                <h6 class="text-uppercase text-primary text-center">Patrocinador Destacado</h6>
+                <h2 class="mb-4 text-center">IMED</h2>
+                <p class="mb-2"><strong>Innovación Constante:</strong> Otro patrocinador con visión y apoyo tecnológico.</p>
+                <p class="mb-2"><strong>Compromiso con el Futuro:</strong> Apoya nuestros proyectos de robótica.</p>
+                <p><strong>Un Socio Confiable:</strong> Siempre presente en nuestra misión.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Patrocinadores End -->
+
+<!-- Patrocinadores Start  -->
+<div class="container py-5">
+    <div class="row">
+        <!-- Contenedor de CARRERA MOTO -->
+        <div class="col-lg-6 mb-4">
+            <div class="bg-white rounded shadow p-4 h-100">
+                <div class="image-container mb-4">
+                    <img class="w-100 h-100" src="{% static 'UProbotics_app/img/fotos_patrocinadores/carrera_moto.png' %}" 
+                         alt="Patrocinador CARRERA MOTO" 
+                         style="object-fit: contain;">
+                </div>
+                <h6 class="text-uppercase text-primary text-center">Patrocinador Destacado</h6>
+                <h2 class="mb-4 text-center">CARRERA MOTO</h2>
+                <p class="mb-2"><strong>Innovación Constante:</strong> CARRERA MOTO impulsa nuestros proyectos con su tecnología de vanguardia.</p>
+                <p class="mb-2"><strong>Compromiso con el Futuro:</strong> Apoyan la formación de talento en robótica y tecnología.</p>
+                <p><strong>Un Socio Confiable:</strong> Un aliado clave en nuestra misión de innovación.</p>
+            </div>
+        </div>
+
+        <!-- Contenedor de REBASA -->
+        <div class="col-lg-6 mb-4">
+            <div class="bg-white rounded shadow p-4 h-100">
+                <div class="image-container mb-4">
+                    <img class="w-100 h-100" src="{% static 'UProbotics_app/img/fotos_patrocinadores/rebasa.png' %}" 
+                         alt="Patrocinador Autonics" 
+                         style="object-fit: contain;">
+                </div>
+                <h6 class="text-uppercase text-primary text-center">Patrocinador Destacado</h6>
+                <h2 class="mb-4 text-center">REBASA</h2>
+                <p class="mb-2"><strong>Innovación Constante:</strong> Otro patrocinador con visión y apoyo tecnológico.</p>
+                <p class="mb-2"><strong>Compromiso con el Futuro:</strong> Apoya nuestros proyectos de robótica.</p>
+                <p><strong>Un Socio Confiable:</strong> Siempre presente en nuestra misión.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Patrocinadores End -->
+
+<!-- Patrocinadores Start  -->
+<div class="container py-5">
+    <div class="row">
+        <!-- Contenedor de INSANE -->
+        <div class="col-lg-6 mb-4">
+            <div class="bg-white rounded shadow p-4 h-100">
+                <div class="image-container mb-4">
+                    <img class="w-100 h-100" src="{% static 'UProbotics_app/img/fotos_patrocinadores/insane.png' %}" 
+                         alt="Patrocinador Autonics" 
+                         style="object-fit: contain;">
+                </div>
+                <h6 class="text-uppercase text-primary text-center">Patrocinador Destacado</h6>
+                <h2 class="mb-4 text-center">INSANE</h2>
+                <p class="mb-2"><strong>Innovación Constante:</strong> Autonics impulsa nuestros proyectos con su tecnología de vanguardia.</p>
+                <p class="mb-2"><strong>Compromiso con el Futuro:</strong> Apoyan la formación de talento en robótica y tecnología.</p>
+                <p><strong>Un Socio Confiable:</strong> Un aliado clave en nuestra misión de innovación.</p>
+            </div>
+        </div>
+
+        <!-- Contenedor de  ENLACES MAPA-->
+        <div class="col-lg-6 mb-4">
+            <div class="bg-white rounded shadow p-4 h-100">
+                <div class="image-container mb-4">
+                    <img class="w-100 h-100" src="{% static 'UProbotics_app/img/fotos_patrocinadores/mapa.png' %}" 
+                         alt="Patrocinador Autonics" 
+                         style="object-fit: contain;">
+                </div>
+                <h6 class="text-uppercase text-primary text-center">Patrocinador Destacado</h6>
+                <h2 class="mb-4 text-center">ENLACES MAPA</h2>
+                <p class="mb-2"><strong>Innovación Constante:</strong> Otro patrocinador con visión y apoyo tecnológico.</p>
+                <p class="mb-2"><strong>Compromiso con el Futuro:</strong> Apoya nuestros proyectos de robótica.</p>
+                <p><strong>Un Socio Confiable:</strong> Siempre presente en nuestra misión.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Patrocinadores End -->
+
+<!-- Patrocinadores Start  -->
+<div class="container py-5">
+    <div class="row">
+        <!-- Contenedor de TEC ENGINEERING -->
+        <div class="col-lg-6 mb-4">
+            <div class="bg-white rounded shadow p-4 h-100">
+                <div class="image-container mb-4">
+                    <img class="w-100 h-100" src="{% static 'UProbotics_app/img/fotos_patrocinadores/tec.png' %}" 
+                         alt="Patrocinador TEC ENGINEERING" 
+                         style="object-fit: contain;">
+                </div>
+                <h6 class="text-uppercase text-primary text-center">Patrocinador Destacado</h6>
+                <h2 class="mb-4 text-center">TEC ENGINEERING</h2>
+                <p class="mb-2"><strong>Innovación Constante:</strong> TEC ENGINEERING impulsa nuestros proyectos con su tecnología de vanguardia.</p>
+                <p class="mb-2"><strong>Compromiso con el Futuro:</strong> Apoyan la formación de talento en robótica y tecnología.</p>
+                <p><strong>Un Socio Confiable:</strong> Un aliado clave en nuestra misión de innovación.</p>
+            </div>
+        </div>
+
+        <!-- Contenedor de  YASKAWA-->
+        <div class="col-lg-6 mb-4">
+            <div class="bg-white rounded shadow p-4 h-100">
+                <div class="image-container mb-4">
+                    <img class="w-100 h-100" src="{% static 'UProbotics_app/img/fotos_patrocinadores/yaskawa.png' %}" 
+                         alt="Patrocinador YASKAWA" 
+                         style="object-fit: contain;">
+                </div>
+                <h6 class="text-uppercase text-primary text-center">Patrocinador Destacado</h6>
+                <h2 class="mb-4 text-center">YASKAWA</h2>
+                <p class="mb-2"><strong>Innovación Constante:</strong> Otro patrocinador con visión y apoyo tecnológico.</p>
+                <p class="mb-2"><strong>Compromiso con el Futuro:</strong> Apoya nuestros proyectos de robótica.</p>
+                <p><strong>Un Socio Confiable:</strong> Siempre presente en nuestra misión.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Patrocinadores End -->
+
+<!-- Patrocinadores Start  -->
+<div class="container py-5">
+    <div class="row">
+        <!-- Contenedor de MONEX -->
+        <div class="col-lg-6 mb-4">
+            <div class="bg-white rounded shadow p-4 h-100">
+                <div class="image-container mb-4">
+                    <img class="w-100 h-100" src="{% static 'UProbotics_app/img/fotos_patrocinadores/monex.png' %}" 
+                         alt="Patrocinador MONEX" 
+                         style="object-fit: contain;">
+                </div>
+                <h6 class="text-uppercase text-primary text-center">Patrocinador Destacado</h6>
+                <h2 class="mb-4 text-center">MONEX</h2>
+                <p class="mb-2"><strong>Innovación Constante:</strong> MONEX impulsa nuestros proyectos con su tecnología de vanguardia.</p>
+                <p class="mb-2"><strong>Compromiso con el Futuro:</strong> Apoyan la formación de talento en robótica y tecnología.</p>
+                <p><strong>Un Socio Confiable:</strong> Un aliado clave en nuestra misión de innovación.</p>
+            </div>
+        </div>
+
+        <!-- Contenedor de  CISC-->
+        <div class="col-lg-6 mb-4">
+            <div class="bg-white rounded shadow p-4 h-100">
+                <div class="image-container mb-4">
+                    <img class="w-100 h-100" src="{% static 'UProbotics_app/img/fotos_patrocinadores/cisc.png' %}" 
+                         alt="Patrocinador Autonics" 
+                         style="object-fit: contain;">
+                </div>
+                <h6 class="text-uppercase text-primary text-center">Patrocinador Destacado</h6>
+                <h2 class="mb-4 text-center">CISC</h2>
+                <p class="mb-2"><strong>Innovación Constante:</strong> Otro patrocinador con visión y apoyo tecnológico.</p>
+                <p class="mb-2"><strong>Compromiso con el Futuro:</strong> Apoya nuestros proyectos de robótica.</p>
+                <p><strong>Un Socio Confiable:</strong> Siempre presente en nuestra misión.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Patrocinadores End -->
+
+<!-- Patrocinadores Start  -->
+<div class="container py-5">
+    <div class="row">
+        <!-- Contenedor de DESTEC -->
+        <div class="col-lg-6 mb-4">
+            <div class="bg-white rounded shadow p-4 h-100">
+                <div class="image-container mb-4">
+                    <img class="w-100 h-100" src="{% static 'UProbotics_app/img/fotos_patrocinadores/destec.png' %}" 
+                         alt="Patrocinador DESTEC" 
+                         style="object-fit: contain;">
+                </div>
+                <h6 class="text-uppercase text-primary text-center">Patrocinador Destacado</h6>
+                <h2 class="mb-4 text-center">DESTEC</h2>
+                <p class="mb-2"><strong>Innovación Constante:</strong> DESTEC impulsa nuestros proyectos con su tecnología de vanguardia.</p>
+                <p class="mb-2"><strong>Compromiso con el Futuro:</strong> Apoyan la formación de talento en robótica y tecnología.</p>
+                <p><strong>Un Socio Confiable:</strong> Un aliado clave en nuestra misión de innovación.</p>
+            </div>
+        </div>
+
+        <!-- Contenedor de  DAEMON BAS-->
+        <div class="col-lg-6 mb-4">
+            <div class="bg-white rounded shadow p-4 h-100">
+                <div class="image-container mb-4">
+                    <img class="w-100 h-100" src="{% static 'UProbotics_app/img/fotos_patrocinadores/DAEMON.png' %}" 
+                         alt="Patrocinador DAEMON" 
+                         style="object-fit: contain;">
+                </div>
+                <h6 class="text-uppercase text-primary text-center">Patrocinador Destacado</h6>
+                <h2 class="mb-4 text-center">DAEMON BAS</h2>
+                <p class="mb-2"><strong>Innovación Constante:</strong> Otro patrocinador con visión y apoyo tecnológico.</p>
+                <p class="mb-2"><strong>Compromiso con el Futuro:</strong> Apoya nuestros proyectos de robótica.</p>
+                <p><strong>Un Socio Confiable:</strong> Siempre presente en nuestra misión.</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Patrocinadores End -->
+
+
 
 
      <!-- Footer Start -->

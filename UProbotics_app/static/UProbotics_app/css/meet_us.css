@@ -1,6 +1,5 @@
 body {
-    background-color: #1c1c1c; /* Color oscuro base */
-    background-image: linear-gradient(180deg, #82B8FF, #381794); /* Gradiente ajustado */
+    background-color: #b5b0c3; /* Color oscuro base */
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -82,10 +81,12 @@ h1{
     text-align: center;
     transition: .5s;
 }
-.study-info{
+.study-info {
+    color: #381794; /* Amarillo claro, como ejemplo */
     font-size: 1.2em;
     text-align: center;
 }
+
 .links{
     margin-top: 2em;
     display: flex;
@@ -198,6 +199,5 @@ footer span a:hover{
         margin: 0 2%;
     }
 }
-
 
 
